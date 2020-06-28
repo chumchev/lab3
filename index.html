@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topological decomposition</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="input">
+            <form class="size" name="test" method="post">
+                <p>
+                    <b>Размер:</b>
+                </p>
+                <p>
+                <input type="text" class = "matrix-size" size="1">
+                </p>
+        
+            </form>
+            <table class="matrix-inputs"></table>
+        </div>
+     
+        <div class="btn">
+            <input type="button" onclick="createMatrixInputs(document.querySelector('.matrix-inputs'))" value="Сгенерировать матрицу">
+            
+            <input type="button" onclick="left_inc()" value="Декомпозиция">
+
+        </div>
+        
+        </br>
+        <div class="out">
+            
+            <div class="dataEntry"></div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
